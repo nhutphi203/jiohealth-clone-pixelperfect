@@ -47,6 +47,24 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Jio Health brand colors
+        "jio-blue": {
+          DEFAULT: "hsl(var(--jio-blue))",
+          foreground: "hsl(var(--jio-blue-foreground))",
+        },
+        "jio-purple": {
+          DEFAULT: "hsl(var(--jio-purple))",
+          light: "hsl(var(--jio-purple-light))",
+        },
+        "jio-teal": {
+          DEFAULT: "hsl(var(--jio-teal))",
+          light: "hsl(var(--jio-teal-light))",
+        },
+        // Service card colors
+        "service-blue": "hsl(var(--service-blue))",
+        "service-purple": "hsl(var(--service-purple))",
+        "service-pink": "hsl(var(--service-pink))",
+        "service-yellow": "hsl(var(--service-yellow))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
