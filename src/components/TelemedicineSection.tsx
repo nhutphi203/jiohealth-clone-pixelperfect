@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Video, MessageCircle, Phone } from "lucide-react";
+import telemedicineBackground from "@/assets/telemedicine-background.jpg";
 
 const TelemedicineSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden" style={{
+      backgroundImage: `url(${telemedicineBackground})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundBlendMode: 'overlay'
+    }}>
       {/* Curved Background Elements */}
       <div className="absolute inset-0">
         <svg viewBox="0 0 1440 320" className="absolute top-0 w-full h-40">

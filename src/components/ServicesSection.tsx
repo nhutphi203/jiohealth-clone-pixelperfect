@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Home, Pill, Search, Shield, ArrowRight } from "lucide-react";
+import servicesBackground from "@/assets/services-background.jpg";
 
 const ServicesSection = () => {
   const services = [
@@ -42,7 +43,12 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 relative overflow-hidden">
+    <section className="py-16 lg:py-24 relative overflow-hidden" style={{
+      backgroundImage: `url(${servicesBackground})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundBlendMode: 'soft-light'
+    }}>
       {/* Curved Background */}
       <div className="absolute inset-0">
         <svg viewBox="0 0 1440 320" className="absolute top-0 w-full h-32">

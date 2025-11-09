@@ -1,10 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Shield, Star } from "lucide-react";
 import doctorHomeImage from "@/assets/doctor-home.jpg";
+import consultationBackground from "@/assets/consultation-background.jpg";
 
 const DoctorHomeSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 to-cyan-50 relative overflow-hidden">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 to-cyan-50 relative overflow-hidden" style={{
+      backgroundImage: `url(${consultationBackground})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundBlendMode: 'soft-light'
+    }}>
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full"></div>
       <div className="absolute bottom-32 right-16 w-32 h-32 bg-jio-blue/10 rounded-full"></div>
